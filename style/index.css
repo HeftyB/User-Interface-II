@@ -26,6 +26,7 @@ header{
 .mainTitle {
     margin: 1%;
     font-weight: bold;
+    font-size: 50px;
 }
 
 nav {
@@ -35,29 +36,52 @@ nav {
 
 .upperBody {
     display: flex;
-    margin: 0.%;
+    margin: 3% 2%;
 }
 
 
-.mainImg {
-    width: 48%;
+img {
+    width: 100%;
+}
+
+#mainImg {
+    width: 70%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.myName {
+    font-size: 30px;
+}
+
+.projectsButton button {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: lawngreen;
 }
 
 .lowerBody {
     display: flex;
     flex-wrap: wrap;
-    margin: 3% 6%;
+    margin: 3% 2%;
     align-content: space-around;
 }
 
-img {
+#projects img {
     width: 200px;
     height: 200px;
+    
 }
 
 .project {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
