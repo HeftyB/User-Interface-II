@@ -7,7 +7,8 @@
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-    border: 1px dotted pink;
+    font-family: cursive;
+    /*border: 1px dotted pink; */
 }
 
 .wrapper {
@@ -20,7 +21,7 @@
 header{
     background-color: dodgerblue;
     border: 5px solid grey;
-    height: 20vh;
+    height: 25vh;
 }
 
 .mainTitle {
@@ -32,11 +33,13 @@ header{
 nav {
     margin: 2%;
     padding: 4px;
+    text-decoration: none;
+    letter-spacing: 3px;
 }
 
 .upperBody {
     display: flex;
-    margin: 3% 2%;
+    margin: 3% 6.75%;
 }
 
 
@@ -61,15 +64,16 @@ img {
 
 .projectsButton button {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     background-color: lawngreen;
+    align-content: center;
 }
 
 .lowerBody {
     display: flex;
     flex-wrap: wrap;
     margin: 3% 2%;
-    align-content: space-around;
+    
 }
 
 #projects img {
@@ -91,8 +95,22 @@ img {
 }
 
 footer {
+    padding: 10%;
     border: 5px solid grey;
     text-align: center;
-    background-color: dodgerblue;
+    background-color: blueviolet;
     height: 20vh;
+    
+}
+
+footer h2 {
+    color: lemonchiffon;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#contact {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: lawngreen;
 }
