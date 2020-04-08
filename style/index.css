@@ -1,1 +1,79 @@
 /* Add CSS styling here */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    border: 1px dotted pink;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    background-color: lavender;
+}
+
+header{
+    background-color: dodgerblue;
+    border: 5px solid grey;
+    height: 20vh;
+}
+
+.mainTitle {
+    margin: 1%;
+    font-weight: bold;
+}
+
+nav {
+    margin: 2%;
+    padding: 4px;
+}
+
+.body {
+  /*  height: 80vh; */
+}
+
+
+.upperBody {
+    display: flex;
+    margin: 0.%;
+}
+
+
+.mainImg {
+    width: 48%;
+}
+
+.lowerBody {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 6%;
+    align-content: space-around;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lowerBody div {
+
+    width: 23%;
+}
+
+footer {
+    border: 5px solid grey;
+    text-align: center;
+    background-color: dodgerblue;
+    height: 20vh;
+}
