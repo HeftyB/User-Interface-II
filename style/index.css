@@ -27,14 +27,14 @@ header{
 .mainTitle {
     margin: 1%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 nav {
     margin: 2%;
-    padding: 4px;
+    padding: ;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: .25em;
 }
 
 .upperBody {
@@ -59,12 +59,12 @@ img {
 }
 
 .myName {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .projectsButton button {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9rem;
     background-color: lawngreen;
     align-content: center;
 }
@@ -73,19 +73,21 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 3% 2%;
+    justify-content: center;
     
 }
+
 
 #projects img {
     width: 200px;
     height: 200px;
-    
 }
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -105,11 +107,66 @@ footer {
 footer h2 {
     color: lemonchiffon;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 #contact {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.7rem;
     background-color: lawngreen;
+}
+
+
+
+@media (max-width: 970px) {
+
+    *{
+        border: 2px solid green;
+    }
+
+    #projects img {
+        padding: 1%;
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    *{
+        border: 2px solid green;
+        box-sizing: content-box;
+    }
+
+    #projects img {
+        padding: 1%;
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    *{
+        flex-direction: column;
+        align-content: center;
+        border: 2px solid pink;
+    }
+
+    h1, nav {
+        text-align: center;
+    }
+
+    #mainImg {
+        width: 100%;
+    }
+
 }
