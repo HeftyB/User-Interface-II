@@ -1,1 +1,115 @@
 /* Add CSS styling here */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: cursive;
+    /*border: 1px dotted pink; */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    background-color: lavender;
+}
+
+header{
+    background-color: dodgerblue;
+    border: 5px solid grey;
+    height: 25vh;
+}
+
+.mainTitle {
+    margin: 1%;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+nav {
+    margin: 2%;
+    padding: 4px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.upperBody {
+    display: flex;
+    margin: 3% 6.75%;
+}
+
+
+img {
+    width: 100%;
+}
+
+#mainImg {
+    width: 70%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.myName {
+    font-size: 30px;
+}
+
+.projectsButton button {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: lawngreen;
+    align-content: center;
+}
+
+.lowerBody {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 2%;
+    
+}
+
+#projects img {
+    width: 200px;
+    height: 200px;
+    
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lowerBody div {
+
+    width: 23%;
+}
+
+footer {
+    padding: 6%;
+    border: 5px solid grey;
+    text-align: center;
+    background-color: blueviolet;
+    
+}
+
+footer h2 {
+    color: lemonchiffon;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#contact {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: lawngreen;
+}
