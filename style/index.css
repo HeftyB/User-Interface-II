@@ -8,7 +8,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
     font-family: cursive;
-    /*border: 1px dotted pink; */
 }
 
 .wrapper {
@@ -27,7 +26,7 @@ header{
 .mainTitle {
     margin: 1%;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 400%;
 }
 
 nav {
@@ -46,7 +45,7 @@ img {
     width: 100%;
 }
 
-#mainImg {
+.mainImg {
     width: 70%;
 }
 
@@ -58,12 +57,12 @@ img {
 }
 
 .myName {
-    font-size: 2rem;
+    font-size: 200%;
 }
 
 .projectsButton button {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 90%;
     background-color: lawngreen;
     align-content: center;
 }
@@ -72,12 +71,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 3% 2%;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
 
-#projects img {
+.lowerBody img {
     width: 200px;
     height: 200px;
 }
@@ -96,7 +95,7 @@ img {
 }
 
 footer {
-    padding: 6%;
+    padding: 4%;
     border: 5px solid grey;
     text-align: center;
     background-color: blueviolet;
@@ -106,27 +105,34 @@ footer {
 footer h2 {
     color: lemonchiffon;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 400%;
 }
 
 #contact {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 170%;
     background-color: lawngreen;
 }
 
 
+@media (max-width: 800px) {
 
-@media (max-width: 970px) {
-
-    *{
-        border: 2px solid green;
+    header {
+        background-color: lime;
     }
 
-    #projects img {
+    .body {
+        background-color: skyblue;
+    }
+
+    .lowerBody img {
         padding: 1%;
         width: 150px;
         height: 150px;
+    }
+
+    footer  {
+        background-color: magenta;
     }
 
 }
@@ -134,15 +140,10 @@ footer h2 {
 
 @media (max-width: 700px) {
 
-    *{
-        border: 2px solid green;
-        box-sizing: content-box;
-    }
-
-    #projects img {
+    .lowerBody img {
         padding: 1%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
 }
@@ -152,20 +153,47 @@ footer h2 {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
     *{
         flex-direction: column;
         align-content: center;
-        border: 2px solid pink;
+    }
+
+    header {
+        background-color: navy;
+        color: white;
+    }
+
+    .body {
+        background-color: tomato;
     }
 
     h1, nav {
         text-align: center;
     }
 
-    #mainImg {
+    nav a {
+        color: yellow;
+    }
+
+    .mainImg {
         width: 100%;
     }
+
+    .lowerBody .project img{
+        width: 20rem;
+        height: auto;
+    }
+    .project {
+        width: 100%;
+    }
+
+    .lowerBody .project a{
+        font-weight: 900;
+        color: springgreen;
+        font-size: 125%;
+    }
+
 
 }
