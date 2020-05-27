@@ -8,7 +8,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
     font-family: cursive;
-    /*border: 1px dotted pink; */
 }
 
 .wrapper {
@@ -27,14 +26,13 @@ header{
 .mainTitle {
     margin: 1%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 400%;
 }
 
 nav {
     margin: 2%;
-    padding: 4px;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: .25em;
 }
 
 .upperBody {
@@ -47,7 +45,7 @@ img {
     width: 100%;
 }
 
-#mainImg {
+.mainImg {
     width: 70%;
 }
 
@@ -59,12 +57,12 @@ img {
 }
 
 .myName {
-    font-size: 30px;
+    font-size: 200%;
 }
 
 .projectsButton button {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 90%;
     background-color: lawngreen;
     align-content: center;
 }
@@ -73,19 +71,21 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 3% 2%;
+    justify-content: space-evenly;
     
 }
 
-#projects img {
+
+.lowerBody img {
     width: 200px;
     height: 200px;
-    
 }
 
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -95,7 +95,7 @@ img {
 }
 
 footer {
-    padding: 6%;
+    padding: 4%;
     border: 5px solid grey;
     text-align: center;
     background-color: blueviolet;
@@ -105,11 +105,95 @@ footer {
 footer h2 {
     color: lemonchiffon;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 400%;
 }
 
 #contact {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 170%;
     background-color: lawngreen;
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        background-color: lime;
+    }
+
+    .body {
+        background-color: skyblue;
+    }
+
+    .lowerBody img {
+        padding: 1%;
+        width: 150px;
+        height: 150px;
+    }
+
+    footer  {
+        background-color: magenta;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .lowerBody img {
+        padding: 1%;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    *{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    header {
+        background-color: navy;
+        color: white;
+    }
+
+    .body {
+        background-color: tomato;
+    }
+
+    h1, nav {
+        text-align: center;
+    }
+
+    nav a {
+        color: yellow;
+    }
+
+    .mainImg {
+        width: 100%;
+    }
+
+    .lowerBody .project img{
+        width: 20rem;
+        height: auto;
+    }
+    .project {
+        width: 100%;
+    }
+
+    .lowerBody .project a{
+        font-weight: 900;
+        color: springgreen;
+        font-size: 125%;
+    }
+
+
 }
